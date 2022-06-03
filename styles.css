@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 
 /* ==================== */
@@ -10,14 +10,14 @@
   --clr-dark: #000000;
   --clr-light: #FFFFFF;
   --clr-blue: #1560BD;
-  --clr-blue-hover: #3e7cc7;
+  --clr-blue-accent: #3e7cc7;
   --light-bg-color: #edf9fc;
   --dark-bg-color: #e1edf5;
   --clr-attention: #e96005;
   --clr-attention-hover: #da5801;
 
   /* ----- Typography ----- */
-  --ff-primary: 'Titillium Web', sans-serif;
+  --ff-primary: 'Open Sans', sans-serif;
   --fs-600: 1.5rem;
   --fs-700: 2.5rem;
 
@@ -85,13 +85,15 @@ a {
 /* ----- Layout ----- */
 
 .container {
-  width: 85%;
+  width: 90%;
   max-width: 1200px;
   margin-inline: auto;
 }
 
 .flex { display: flex; }
 .grid { display: grid; }
+
+.section-headline { padding-top: 3rem; }
 
 
 /* ==================== */
@@ -101,7 +103,7 @@ a {
 /* ----- Header and Nav Bar ----- */
 
 header {
-  height: 98vh;
+  height: 100vh;
   background-image: url('../assets/images/hero-background.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -109,15 +111,25 @@ header {
 }
 
 .navbar {
-  padding-top: 2.667rem;
+  /* padding-top: 2.667rem; */
+  padding: 2.667rem 0.5em 0 0;
   justify-content: space-between;
   align-items: center;
+  /* background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 .nav_logo_container {
   background-color: var(--clr-light);
   border-radius: 45%;
   padding: 0.4em;
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
+  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.25);
 }
 
 .nav_logo_container,
@@ -148,9 +160,15 @@ header {
 
 .hamburger_menu_container.hidden { display: none; }
 
+.nav_logo_container.hidden{ display: hidden; }
+
+.btn.hidden { display: none; }
+
 .close_hamburger_container { display: none; }
 
 .close_hamburger_container.active { display: block; }
+
+.btn.active { display: inline-block; }
 
 .nav__menu--item {
   margin-bottom: 1.6rem;
@@ -160,3 +178,88 @@ header {
 .nav__menu--item:last-child { margin: 0; }
 
 .nav__menu--item a { color: var(--clr-light); }
+
+.hero-content {
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-header p {
+  margin-top: 2rem;
+}
+
+.left-header h1 {
+  margin-top: 2.5rem;
+}
+
+.left-header h2 {
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: var(--clr-attention);
+  color: var(--light-bg-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 1.3rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.4s;
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0 10px 30px var(--clr-attention-hover);
+  box-shadow: 0 10px 30px var(--clr-attention-hover);
+}
+
+.btn:hover {
+  background-color: var(--clr-attention-hover);
+}
+
+/* ----- Grow Business section ----- */
+
+.how {
+  /* background-color: var(--dark-bg-color); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9)), url('../assets/images/skyscraper.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 50vh;
+  padding-bottom: 2rem;
+}
+
+.how-item-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.how-item {
+  /* max-width: 30rem; */
+}
+
+/* .how-item:last-child { margin-right: 0; } */
+
+.how-item .icon { margin-top: 7rem; }
+
+.how-item h3 { margin-top: 1.5rem; }
+
+.how-item p {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.icon {
+  color: var(--clr-blue-accent);
+  font-size: 64px;
+}
