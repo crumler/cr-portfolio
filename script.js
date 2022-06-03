@@ -26,3 +26,6 @@ function closeMobileMenu() {
   closeHamburger.classList.toggle('active');
   ctaButton.classList.toggle('active');
 };
+
+// Copyright Year
+document.querySelector('.copyright-year').innerText = new Date().getFullYear();

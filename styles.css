@@ -82,6 +82,9 @@ a {
   text-decoration: none;
 }
 
+a:link,
+a:visited { color: var(--clr-blue); }
+
 /* ----- Layout ----- */
 
 .container {
@@ -207,14 +210,13 @@ header {
   text-transform: uppercase;
   font-size: 2rem;
   margin-top: 2rem;
-  padding: 1.3rem;
+  padding: 1rem;
   border: none;
   border-radius: 10rem;
   transition: all 0.4s;
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
   overflow: hidden;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-box-shadow: 0 10px 30px var(--clr-attention-hover);
@@ -262,4 +264,78 @@ header {
 .icon {
   color: var(--clr-blue-accent);
   font-size: 64px;
+}
+
+/* ----- Past Project ----- */
+
+.projects {
+  background-color: var(--light-bg-color);
+  padding-bottom: 2rem;
+}
+
+.projects-container {
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* .project-container {
+  max-width: 100vw;
+  margin: 0 auto;
+} */
+
+.project img {
+  display: inline;
+  width: 70%;
+  height: auto;
+}
+
+.project { margin-top: 2rem; }
+
+/* ----- Contact Me section ----- */
+
+.contact {
+  background-color: var(--dark-bg-color);
+  background-image: url(/assets/images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2.5rem;
+}
+
+.form-container {
+  margin-top: 3rem;
+}
+
+label {
+  display: block;
+  margin-top: 2.5rem;
+}
+
+label:first-child { margin-top: 0; }
+
+input,
+textarea {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.8em;
+  font-size: 1.6rem;
+  min-width: 15.625rem;
+}
+
+.btn__submit {
+  margin-inline: auto;
+}
+
+/* ----- Footer ----- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-bg-color);
 }
