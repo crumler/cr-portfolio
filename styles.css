@@ -302,7 +302,7 @@ header {
 
 .contact {
   background-color: var(--dark-bg-color);
-  background-image: url(/assets/images/wave.svg);
+  background-image: url('./assets/images/wave.svg');
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 2.5rem;
