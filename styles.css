@@ -107,7 +107,7 @@ a:visited { color: var(--clr-blue); }
 
 header {
   height: 100vh;
-  background-image: url('../assets/images/hero-background.svg');
+  background-image: url('./assets/images/hero-background.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,7 +231,7 @@ header {
 
 .how {
   /* background-color: var(--dark-bg-color); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9)), url('../assets/images/skyscraper.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9)), url('./assets/images/skyscraper.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
