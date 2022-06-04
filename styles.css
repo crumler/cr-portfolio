@@ -328,7 +328,7 @@ textarea {
   margin-top: 0.5rem;
   padding: 0.8em;
   font-size: 1.6rem;
-  min-width: 15.625rem;
+  max-width: 21.875rem;
 }
 
 .btn__submit {
