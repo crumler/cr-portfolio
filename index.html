@@ -35,7 +35,7 @@
           <h1 class="hero-title fs-700">It's Time to <span class="blue-span">Level Up!</span></h1>
           <h2 class="fs-600">You can focus on running your business while I focus on growing it.</h2>
           
-          <button class="btn cta">Get Started</button>
+          <a href="#contact"><button class="btn cta">Get Started</button></a>
         </div>
       </div>
     </div>
@@ -130,15 +130,17 @@
       <div class="container">
         <div class="form-container">
           <form action="https://formspree.io/f/xvolqkjr" method="POST">
-            <label class="name text-light bold">
-              Name:
-              <input type="text" id="name" name="name" required>
-            </label>
-    
-            <label class="email bold">
-              Email:
-              <input type="text" name="email" required>
-            </label>
+            <div class="name-email-container">
+              <label class="name text-light bold">
+                Name:
+                <input type="text" id="name" name="name" required>
+              </label>
+      
+              <label class="email bold">
+                Email:
+                <input type="text" name="email" required>
+              </label>
+            </div>
     
             <label class="message bold">
               Message:
