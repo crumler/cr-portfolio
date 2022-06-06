@@ -249,13 +249,14 @@ header {
   justify-content: center;
 }
 
-.how-item {
-  /* max-width: 30rem; */
+.how-item p,
+.how-item span {
+  font-size: 1.125rem;
 }
 
 /* .how-item:last-child { margin-right: 0; } */
 
-.how-item .icon { margin-top: 7rem; }
+.how-item .icon { margin-top: 5rem; }
 
 .how-item h3 { margin-top: 1.5rem; }
 
