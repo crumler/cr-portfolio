@@ -14,7 +14,7 @@ function mobileMenu() {
   navMenu.classList.toggle('active');
   closeHamburger.classList.toggle('active');
   navLogo.classList.toggle('hidden');
-  ctaButton.classList.toggle('hidden');
+  // ctaButton.classList.toggle('hidden');
 };
 
 closeHamburger.addEventListener('click', closeMobileMenu);
@@ -24,7 +24,7 @@ function closeMobileMenu() {
   hamburger.classList.toggle('hidden');
   navMenu.classList.toggle('active');
   closeHamburger.classList.toggle('active');
-  ctaButton.classList.toggle('active');
+  // ctaButton.classList.toggle('active');
 };
 
 // Copyright Year
