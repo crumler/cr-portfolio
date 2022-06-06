@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="./styles.css">
   <title>ChrisRumler.com</title>
 </head>
@@ -27,12 +29,15 @@
         </div>
       </nav>
 
-      <div class="hero-content flex">
+      <div class="animate__animated animate__bounceInRight hero-content flex">
         <img src="./assets/images/profile_avatar.svg" class="profile-avatar" alt="Profile Avatar">
 
         <div class="left-header text-center">
+          <p>Hi!  My name is</p>
+          <h1 class="bold">Chris Rumler!</h1>
+          <p>And I have just one question for you...</p>
           <p class="bold">Still looking for more customers?</p>
-          <h1 class="hero-title fs-700">It's Time to <span class="blue-span">Level Up!</span></h1>
+          <h2 class="hero-title fs-700">Then It's Time to <span class="blue-span uppercase">Level Up!</span></h2>
           <h2 class="fs-600">You can focus on running your business while I focus on growing it.</h2>
           
           <a href="#contact"><button class="btn cta">Get Started</button></a>
@@ -42,26 +47,30 @@
   </header>
 
   <main>
+
+    <!-- How I'll Grow Your Business section -->
     <section class="how" id="how">
       <div class="container">
-        <h2 class="section-headline fs-600 text-center text-light">How I'll Grow Your Business</h2>
+        <h2 class="section-headline animate__animated animate__bounce fs-600 text-center text-light">How I'll Grow Your Business</h2>
       <div class="flex">
         <div class="how-item-container">
-          <div class="how-item">
+          <div class="how-item wow animate__animated animate__backInLeft">
             <div class="text-center">
               <ion-icon class="icon" name="logo-dribbble"></ion-icon>
             </div>
             <h3 class="fs-600 text-center">Web Design</h3>
             <p>I can create clean, modern, and concise web sites and landing pages for your business to attract new customers.  I can also take your current web site and work to optimize it.</p>
           </div>
-          <div class="how-item">
+
+          <div class="how-item animate__animated animate__backInRight">
             <div class="text-center">
               <ion-icon class="icon" name="pencil-outline"></ion-icon>
             </div>
             <h3 class="fs-600 text-center">Search Engine Optimization</h3>
             <p>By implementing SEO: I can help your business's web site find more success within online search engines, such as Google.</p>
           </div>
-          <div class="how-item">
+
+          <div class="how-item animate__animated animate__backInLeft">
             <div class="text-center">
               <ion-icon class="icon" name="cash-outline"></ion-icon>
             </div>
@@ -77,47 +86,91 @@
       </div>
     </section>
 
+    <!-- Technical Skills section -->
+    <section class="skills bg-dark" id="skills">
+      <div class="container">
+        <h2 class="section-headline animate__animated animate__bounce fs-600 text-center">Technical Skills</h2>
+
+        <div class="flex">
+          <div class="skill-container">
+            <ion-icon name="logo-html5" class="fs-700"></ion-icon>
+            <p class="fs-600 bold">HTML</p>
+          </div>
+
+          <div class="skill-container">
+            <ion-icon name="logo-css3" class="fs-700"></ion-icon>
+            <p class="fs-600 bold">CSS</p>
+          </div>
+
+          <div class="skill-container">
+            <ion-icon name="logo-javascript" class="fs-700"></ion-icon>
+            <p class="fs-600 bold">JavaScript</p>
+          </div>
+
+          <div class="skill-container">
+            <ion-icon name="logo-react" class="fs-700"></ion-icon>
+            <p class="fs-600 bold">React</p>
+          </div>
+
+          <div class="skill-container">
+            <ion-icon name="logo-wordpress" class="fs-700"></ion-icon>
+            <p class="fs-600 bold">WordPress</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Past Projects -->
     <section class="projects" id="projects">
       <div class="container">
-        <h2 class="section-headline fs-600 text-center">Past Projects</h2>
+        <h2 class="section-headline animate__animated animate__bounce fs-600 text-center">Past Projects</h2>
       </div>
 
-      <div class="projects-container flex">
+      <div class="projects-container container flex">
 
-        <div class="project">
-          <a href="https://crumler.github.io/updated-loopstudios/" target="_blank">
-            <img src="./assets/images/loops.webp" alt="Loops Studios Front End Mentor project">
-            <p class="bold">Loop Studios (Front End Mentor Challenge)</p>
-          </a>
+        <div class="project-container">
+          <div class="project">
+            <a href="https://crumler.github.io/updated-loopstudios/" target="_blank">
+              <img src="./assets/images/loops.webp" alt="Loops Studios Front End Mentor project">
+              <p class="bold">Loop Studios (Front End Mentor Challenge)</p>
+            </a>
+          </div>
         </div>
 
-        <div class="project">
-          <a href="https://crumler.github.io/maker-pre-launch-landing-page/" target="_blank">
-            <img src="./assets/images/maker.webp" alt="Maker landing page Front End Mentor project">
-            <p class="bold">Maker Landing Page (Front End Mentor Challenge)</p>
-          </a>
+        <div class="project-container">
+          <div class="project">
+            <a href="https://crumler.github.io/maker-pre-launch-landing-page/" target="_blank">
+              <img src="./assets/images/maker.webp" alt="Maker landing page Front End Mentor project">
+              <p class="bold">Maker Landing Page (Front End Mentor Challenge)</p>
+            </a>
+          </div>
         </div>
 
-        <div class="project">
-          <a href="https://crumler.github.io/GhostBearPizza/" target="_blank">
-            <img src="./assets/images/ghost_bear.webp" alt="Ghost Bear Pizza project">
-            <p class="bold">Ghost Bear Pizza</p>
-          </a>
+        <div class="project-container">
+          <div class="project">
+            <a href="https://crumler.github.io/GhostBearPizza/" target="_blank">
+              <img src="./assets/images/ghost_bear.webp" alt="Ghost Bear Pizza project">
+              <p class="bold">Ghost Bear Pizza</p>
+            </a>
+          </div>
         </div>
 
-        <div class="project">
-          <a href="https://rumler-api.web.app/" target="_blank">
-            <img src="./assets/images/nasa.webp" alt="NASA Photo of the Day project">
-            <p class="bold">NASA Photo of the Day</p>
-          </a>
+        <div class="project-container">
+          <div class="project">
+            <a href="https://rumler-api.web.app/" target="_blank">
+              <img src="./assets/images/nasa.webp" alt="NASA Photo of the Day project">
+              <p class="bold">NASA Photo of the Day</p>
+            </a>
+          </div>
         </div>
 
-        <div class="project">
-          <a href="https://mk-weatherapp.herokuapp.com/" target="_blank">
-            <img class="mk" src="./assets/images/mk.webp" alt="Weather app project">
-            <p class="bold">Weather App</p>
-          </a>
+        <div class="project-container">
+          <div class="project">
+            <a href="https://mk-weatherapp.herokuapp.com/" target="_blank">
+              <img class="mk" src="./assets/images/mk.webp" alt="Weather app project">
+              <p class="bold">Weather App</p>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -125,7 +178,7 @@
     <!-- Contact Me section -->
 
     <section class="contact" id="contact">
-      <h2 class="section-headline fs-600 text-light text-center">Contact Me</h2>
+      <h2 class="section-headline animate__animated animate__bounce fs-600 text-light text-center">Contact Me</h2>
 
       <div class="container">
         <div class="form-container">
@@ -163,6 +216,10 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
   <script src="./script.js"></script>
 </body>
 </html>
