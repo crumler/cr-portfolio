@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <title>ChrisRumler.com</title>
 </head>
@@ -29,7 +28,7 @@
         </div>
       </nav>
 
-      <div class="hero-content flex">
+      <div class="hero-content flex" data-aos="zoom-in" data-aos-delay="200">
         <img src="./assets/images/profile_avatar.svg" class="profile-avatar" alt="Profile Avatar">
 
         <div class="left-header text-center">
@@ -51,10 +50,10 @@
     <!-- How I'll Grow Your Business section -->
     <section class="how" id="how">
       <div class="container">
-        <h2 class="section-headline fs-600 text-center text-light">How I'll Grow Your Business</h2>
+        <h2 class="section-headline fs-600 text-center text-light" data-aos="fade-down">How I'll Grow Your Business</h2>
       <div class="flex">
         <div class="how-item-container">
-          <div class="how-item">
+          <div class="how-item" data-aos="fade-left" data-aos-delay="300">
             <div class="text-center">
               <ion-icon class="icon" name="logo-dribbble"></ion-icon>
             </div>
@@ -62,7 +61,7 @@
             <p>I can create clean, modern, and concise web sites and landing pages for your business to attract new customers.  I can also take your current web site and work to optimize it.</p>
           </div>
 
-          <div class="how-item">
+          <div class="how-item"  data-aos="fade-right" data-aos-delay="300">
             <div class="text-center">
               <ion-icon class="icon" name="pencil-outline"></ion-icon>
             </div>
@@ -70,7 +69,7 @@
             <p>By implementing SEO: I can help your business's web site find more success within online search engines, such as Google.</p>
           </div>
 
-          <div class="how-item">
+          <div class="how-item"  data-aos="fade-left" data-aos-delay="300">
             <div class="text-center">
               <ion-icon class="icon" name="cash-outline"></ion-icon>
             </div>
@@ -89,9 +88,9 @@
     <!-- Technical Skills section -->
     <section class="skills bg-dark" id="skills">
       <div class="container">
-        <h2 class="section-headline fs-600 text-center">Technical Skills</h2>
+        <h2 class="section-headline fs-600 text-center"  data-aos="fade-down">Technical Skills</h2>
 
-        <div class="flex">
+        <div class="flex"  data-aos="fade-up" data-aos-delay="300">
           <div class="skill-container">
             <ion-icon name="logo-html5" class="fs-700"></ion-icon>
             <p class="fs-600 bold">HTML</p>
@@ -123,12 +122,12 @@
     <!-- Past Projects -->
     <section class="projects" id="projects">
       <div class="container">
-        <h2 class="section-headline fs-600 text-center">Past Projects</h2>
+        <h2 class="section-headline fs-600 text-center"  data-aos="fade-down">Past Projects</h2>
       </div>
 
       <div class="projects-container container flex">
 
-        <div class="project-container">
+        <div class="project-container" data-aos="fade-left" data-aos-delay="300">
           <div class="project">
             <a href="https://crumler.github.io/updated-loopstudios/" target="_blank">
               <img src="./assets/images/loops.webp" alt="Loops Studios Front End Mentor project">
@@ -137,7 +136,7 @@
           </div>
         </div>
 
-        <div class="project-container">
+        <div class="project-container" data-aos="fade-right" data-aos-delay="300">
           <div class="project">
             <a href="https://crumler.github.io/maker-pre-launch-landing-page/" target="_blank">
               <img src="./assets/images/maker.webp" alt="Maker landing page Front End Mentor project">
@@ -146,7 +145,7 @@
           </div>
         </div>
 
-        <div class="project-container">
+        <div class="project-container" data-aos="fade-left" data-aos-delay="300">
           <div class="project">
             <a href="https://crumler.github.io/GhostBearPizza/" target="_blank">
               <img src="./assets/images/ghost_bear.webp" alt="Ghost Bear Pizza project">
@@ -155,7 +154,7 @@
           </div>
         </div>
 
-        <div class="project-container">
+        <div class="project-container" data-aos="fade-right" data-aos-delay="300">
           <div class="project">
             <a href="https://rumler-api.web.app/" target="_blank">
               <img src="./assets/images/nasa.webp" alt="NASA Photo of the Day project">
@@ -164,7 +163,7 @@
           </div>
         </div>
 
-        <div class="project-container">
+        <div class="project-container" data-aos="fade-left" data-aos-delay="300">
           <div class="project">
             <a href="https://mk-weatherapp.herokuapp.com/" target="_blank">
               <img class="mk" src="./assets/images/mk.webp" alt="Weather app project">
@@ -178,10 +177,10 @@
     <!-- Contact Me section -->
 
     <section class="contact" id="contact">
-      <h2 class="section-headline fs-600 text-light text-center">Contact Me</h2>
+      <h2 class="section-headline fs-600 text-light text-center"  data-aos="fade-down">Contact Me</h2>
 
       <div class="container">
-        <div class="form-container">
+        <div class="form-container"  data-aos="fade-up" data-aos-delay="300">
           <form action="https://formspree.io/f/xvolqkjr" method="POST">
             <div class="name-email-container">
               <label class="name text-light bold">
@@ -201,7 +200,7 @@
             </label>
             
             <div class="flex">
-              <input class="btn btn__submit" type="submit" value="SEND">
+              <input class="btn btn__submit" type="submit" value="SEND" data-aos="zoom-in">
             </div>
           </form>
         </div>
@@ -216,9 +215,9 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="js/wow.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-  new WOW().init();
+    AOS.init();
   </script>
   <script src="./script.js"></script>
 </body>
