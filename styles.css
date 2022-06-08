@@ -269,7 +269,7 @@ header {
 .skills .flex {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .skill-container {
