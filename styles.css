@@ -401,8 +401,15 @@ textarea {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: var(--dark-bg-color);
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.profile-avatar {
+  width: 50%;
+  height: auto;
 }
 
 
@@ -423,6 +430,12 @@ footer {
   .left-header h2 { margin-top: 1.5rem; }
   
   .cta { margin-bottom: 1.5rem; }
+
+  .profile-avatar {
+    width: 25%;
+    height: auto;
+  }
+  
 }
 
 @media (min-width: 635px) {
