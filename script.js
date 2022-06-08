@@ -5,6 +5,7 @@ const navMenu = document.querySelector('.nav__menu');
 const closeHamburger = document.querySelector('.close_hamburger_container');
 const navLogo = document.querySelector('.nav_logo_container');
 const ctaButton = document.querySelector('.btn');
+const navigationLink = document.querySelector('.nav-link');
 
 hamburger.addEventListener('click', mobileMenu);
 
@@ -18,6 +19,8 @@ function mobileMenu() {
 };
 
 closeHamburger.addEventListener('click', closeMobileMenu);
+
+navigationLink.addEventListener('click', closeMobileMenu);
 
 // Toggles the Close Menu button
 function closeMobileMenu() {
