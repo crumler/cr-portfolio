@@ -27,5 +27,8 @@ function closeMobileMenu() {
   // ctaButton.classList.toggle('active');
 };
 
+// For Animations
+AOS.init();
+
 // Copyright Year
 document.querySelector('.copyright-year').innerText = new Date().getFullYear();
