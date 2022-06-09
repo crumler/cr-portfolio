@@ -156,7 +156,7 @@ header {
 
 .nav_logo_container,
 .hamburger_menu_container,
-.close_hamburger_container { z-index: 100; }
+.close_hamburger_container { z-index: 102; }
 
 .nav-logo {
   height: 3rem;
@@ -168,6 +168,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 101;
   font-size: var(--fs-700);
   padding-left: 1.6rem;
   top: 0;
