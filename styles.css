@@ -51,7 +51,7 @@ img {
 
 picture { margin-inline: auto; }
 
-picture img { width: 100%; }
+/* picture img { width: 100%; } */
 
 
 /* ==================== */
@@ -210,12 +210,12 @@ header {
 }
 
 .hero-title .blue-span {
-  background: rgba( 204, 211, 251, 0.25 );
+  /* background: rgba( 204, 211, 251, 0.25 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 .left-header p { margin-top: 2rem; }
@@ -390,7 +390,7 @@ textarea {
   margin-top: 0.5rem;
   font-size: 1rem;
   padding: 0.2em 0;
-  max-width: 21.875rem;
+  /* max-width: 21.875rem; */
 }
 
 .btn__submit {
