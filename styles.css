@@ -245,6 +245,7 @@ header {
 
 .about p {
   line-height: 1.8rem;
+  margin-top: 1rem;
 }
 
 .profile-description-container { margin-top: 2rem; }
