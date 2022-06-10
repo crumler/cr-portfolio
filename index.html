@@ -91,20 +91,12 @@
       <div class="container">
         <h2 class="section-headline fs-600 text-center" data-aos="fade-down">A Little About Myself</h2>
         
-        <div class="flex">
-          <div class="profile-image-container" data-aos="fade-up" data-aos-delay="300">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#1560BD" d="M44,-52.8C59.9,-39,77.6,-27.9,80.5,-13.9C83.3,0.1,71.1,17.1,60.2,33.4C49.2,49.8,39.4,65.5,24.6,73.4C9.8,81.3,-10,81.5,-29.3,76.3C-48.6,71,-67.4,60.4,-77.4,44.2C-87.3,27.9,-88.4,6.1,-83.8,-13.9C-79.2,-33.9,-69,-52,-54.1,-65.9C-39.2,-79.8,-19.6,-89.6,-2.8,-86.2C14,-82.9,28.1,-66.5,44,-52.8Z" transform="translate(100 100)" />
-            </svg>
-            <img src="./assets/images/profile2.png" class="about_profile" alt="Profile picture" />
-          </div>
-          <div class="profile-description-container" data-aos="fade-down" data-aos-delay="300">
-            <p>Hi!  My name is Chris Rumler and I enjoy creating things that live on the Internet.</p>
+        <div class="profile-description-container text-center" data-aos="fade-down" data-aos-delay="300">
+          <p>Hi!  My name is Chris Rumler and I enjoy creating things that live on the Internet.</p>
 
-            <p>In 2020, I fell in love with web development <span class="blue-span bold">after graduating a bootcamp specializing in the field.</span>  Since then, I have been obsessed with learning new skills and technologies within web development.</p>
+          <p>In 2020, I fell in love with web development <span class="blue-span bold">after graduating a bootcamp specializing in the field.</span>  Since then, I have been obsessed with learning new skills and technologies within web development.</p>
   
-            <p>Today, I create web sites for <span class="blue-span bold">businesses that are looking to expand their online presence.</span></p>
-          </div>
+          <p>Today, I create web sites for <span class="blue-span bold">businesses that are looking to expand their online presence.</span></p>
         </div>
       </div>
     </section>
@@ -204,24 +196,26 @@
       <h2 class="section-headline fs-600 text-light text-center"  data-aos="fade-down">Contact Me</h2>
 
       <div class="container">
-        <div class="form-container"  data-aos="fade-up" data-aos-delay="300">
-          <form action="https://formspree.io/f/xvolqkjr" method="POST">
-            <div class="name-email-container">
-              <label class="name text-light bold">
-                Name:
-                <input type="text" id="name" name="name" required>
-              </label>
+        <div class="form-container flex"  data-aos="fade-up" data-aos-delay="300">
+          <div class="form-inputs-container">
+            <form action="https://formspree.io/f/xvolqkjr" method="POST">
+              <div class="name-email-container">
+                <label class="name bold">
+                  Name:
+                  <input type="text" id="name" name="name" required>
+                </label>
+        
+                <label class="email bold">
+                  Email:
+                  <input type="text" name="email" required>
+                </label>
+              </div>
       
-              <label class="email bold">
-                Email:
-                <input type="text" name="email" required>
+              <label class="message bold">
+                Message:
+                <textarea name="message" id="message" rows="10" required></textarea>
               </label>
-            </div>
-    
-            <label class="message bold">
-              Message:
-              <textarea name="message" id="message" rows="10" required></textarea>
-            </label>
+          </div>
             
             <div class="flex">
               <input class="btn btn__submit" type="submit" value="SEND" data-aos="zoom-in">

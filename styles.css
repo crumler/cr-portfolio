@@ -245,18 +245,15 @@ header {
 
 .about p {
   line-height: 1.8rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
-.about p:first-child { margin-top: 0; }
-
 .profile-description-container { margin-top: 2rem; }
-
-.profile-image-container { position: relative; }
 
 .about_profile {
   position: absolute;
   width: 51%;
+  max-width: 51%;
   height: auto;
   top: 10%;
   left: 21%;
@@ -307,8 +304,6 @@ header {
 .how-item span { font-size: 2rem; }
 
 .how-item span:last-child { font-size: 1.125rem; }
-
-/* .how-item:last-child { margin-right: 0; } */
 
 .how-item .icon { margin-top: 5rem; }
 
@@ -364,9 +359,19 @@ header {
 }
 
 .form-container {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 3rem;
+}
+
+.form-inputs-container {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1em;
 }
 
 label {
@@ -427,9 +432,6 @@ footer {
   
   .cta { margin-bottom: 1.5rem; }
 
-  input,
-  textarea { min-width: 20rem; }
-
   .profile-avatar {
     width: 25%;
     height: auto;
@@ -437,9 +439,9 @@ footer {
   
 }
 
-@media (min-width: 635px) {
-
-  .email { color: var(--clr-light); }
+@media (min-width: 600px) and (max-width: 899px) {
+  input,
+  textarea { min-width: 20rem; }
 }
 
 @media (min-width: 900px) {
@@ -471,14 +473,6 @@ footer {
 
   .nav__menu--item:last-child { margin: 0; }
 
-  .about .flex {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .profile-description-container { width: 80%; }
-
   .how-item-container {
     display: flex;
     gap: 1.5rem;
@@ -505,11 +499,6 @@ footer {
     max-width: 100%;
     width: 100%;
   }
-}
-
-@media (min-width: 1085px) {
-  
-  .message { color: var(--clr-light); }
 }
 
 @media (min-width: 1100px) {
