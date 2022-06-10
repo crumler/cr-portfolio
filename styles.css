@@ -497,10 +497,13 @@ footer {
     font-size: 1rem;
     text-transform: none;
     font-weight: normal;
-    transition: transform 0.4s;
   }
 
-  .nav__menu--item:hover { transform: scale(120%); }
+  .nav__menu--item,
+  .project { transition: transform 0.4s; }
+
+  .nav__menu--item:hover,
+  .project:hover { transform: scale(120%); }
 
   .nav__menu--item:last-child { margin: 0; }
 
