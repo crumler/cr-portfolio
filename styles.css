@@ -109,6 +109,13 @@ a:visited { color: var(--clr-blue); }
 .btn:hover,
 .btn__submit:hover { background-color: var(--clr-attention-hover); }
 
+.section-headline {
+  background: #1560BD;
+  background: linear-gradient(to right, #1560BD 37%, #E96005 69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* ----- Layout ----- */
 
 .container {
