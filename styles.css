@@ -115,7 +115,10 @@ a:visited { color: var(--clr-blue); }
   -webkit-text-fill-color: transparent;
 }
 
-.social-icon { color: var(--clr-blue); }
+.social-icon {
+  color: var(--clr-blue);
+  margin: 0 0.5rem;
+}
 .social-icon--nav { color: var(--clr-light); }
 
 .social-icon--nav:first-child { margin-left: 1rem; }
