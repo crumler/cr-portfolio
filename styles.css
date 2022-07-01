@@ -21,7 +21,6 @@
   --ff-primary: 'Open Sans', sans-serif;
   --fs-600: 1.5rem;
   --fs-700: 2.5rem;
-
 }
 
 /* ==================== */
@@ -115,6 +114,11 @@ a:visited { color: var(--clr-blue); }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.social-icon { color: var(--clr-blue); }
+.social-icon--nav { color: var(--clr-light); }
+
+.social-icon--nav:first-child { margin-left: 1rem; }
 
 /* ----- Layout ----- */
 
@@ -397,6 +401,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
+}
+
+.footer--social {
   margin-top: 1rem;
 }
 
