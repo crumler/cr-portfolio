@@ -467,10 +467,19 @@ footer {
 
   .how-item-container {
     display: flex;
+    align-items: flex-start;
     gap: 1.5rem;
   }
 
   .how-item { width: 100%; }
+
+  .how-item p { font-size: 1rem; }
+
+  .how-item span { font-size: 2rem; }
+
+  .how-item span:last-child { font-size: 1rem; }
+
+  .how-item-container { gap: 3rem; }
 
   .projects-container {
     display: grid;
@@ -545,15 +554,5 @@ footer {
   .profile-description-container {
     margin: 0;
     width: 100%;
-  }
-
-  .how-item p { font-size: 1rem; }
-
-  .how-item span { font-size: 2rem; }
-
-  .how-item span:last-child { font-size: 1rem; }
-
-  .how-item-container {
-    gap: 4rem;
   }
 }
