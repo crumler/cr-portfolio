@@ -119,9 +119,12 @@ a:visited { color: var(--clr-blue); }
   color: var(--clr-blue);
   margin: 0 0.5rem;
 }
-.social-icon--nav { color: var(--clr-light); }
+.social-icon--nav {
+  display: inline-block;
+  color: var(--clr-light);
+}
 
-.social-icon--nav:first-child { margin-left: 1rem; }
+.social-icon--a { margin-right: 1rem; }
 
 /* ----- Layout ----- */
 
