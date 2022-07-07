@@ -546,4 +546,14 @@ footer {
     margin: 0;
     width: 100%;
   }
+
+  .how-item p { font-size: 1rem; }
+
+  .how-item span { font-size: 2rem; }
+
+  .how-item span:last-child { font-size: 1rem; }
+
+  .how-item-container {
+    gap: 4rem;
+  }
 }
