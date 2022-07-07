@@ -183,7 +183,7 @@ header {
   flex-direction: column;
   justify-content: center;
   z-index: 101;
-  font-size: var(--fs-700);
+  font-size: var(--fs-600);
   padding-left: 1.6rem;
   top: 0;
   left: -100%;
