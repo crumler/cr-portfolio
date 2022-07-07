@@ -520,10 +520,14 @@ footer {
   }
 
   .nav__menu--item,
-  .project { transition: transform 0.4s; }
+  .project,
+  .social-icon,
+  .social-icon--nav { transition: transform 0.4s; }
 
   .nav__menu--item:hover,
-  .project:hover { transform: scale(120%); }
+  .project:hover,
+  .social-icon:hover,
+  .social-icon--nav:hover { transform: scale(120%); }
 
   .nav__menu--item:last-child { margin: 0; }
 
