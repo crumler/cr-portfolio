@@ -288,7 +288,6 @@ header {
 /* ----- Grow Business section ----- */
 
 .how {
-  /* background-color: var(--dark-bg-color); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9)), url('./assets/images/skyscraper.webp');
   background-attachment: fixed;
   background-position: center;
@@ -449,6 +448,8 @@ footer {
 @media (min-width: 600px) {
 
   html { font-size: 20px; }
+
+  .hero-profile { margin: 0; }
   
   .hero-content img { width: 50%; }
 
