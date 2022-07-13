@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 
 /* ==================== */
@@ -9,6 +9,7 @@
   /* ----- Colors ----- */
   --clr-dark: #000000;
   --clr-light: #FFFFFF;
+  --clr-gray: #a4a4a4;
   --clr-blue: #1560BD;
   --clr-blue-accent: #3e7cc7;
   --light-bg-color: #edf9fc;
@@ -417,6 +418,27 @@ footer {
 .profile-avatar {
   width: 50%;
   height: auto;
+}
+
+/* ==================== */
+/* BLOG PAGE            */
+/* ==================== */
+
+.blog-heading {
+  margin-bottom: 3rem;
+}
+
+.blog-heading p {
+  margin-top: 0.7rem;
+  font-weight: 300;
+}
+
+.blog-footer {
+  background-color: var(--clr-gray);
+}
+
+.blog-footer p {
+  margin-top: 1rem;
 }
 
 
