@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My name is Chris Rumler and I help businesses expand their online presence and with their web sites.">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Blog | ChrisRumler.com</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar flex">
+        <div class="nav_logo_container">
+          <a href="../index.html"><img src="../assets/logos/nav_logo.svg" class="nav-logo" /></a>
+        </div>
+        <ul class="nav__menu text-light">
+          <li class="nav__menu--item text-light bold uppercase"><a href=#how class="nav-link">Services</a></li>
+          <li class="nav__menu--item text-light bold uppercase"><a href=#about class="nav-link">About Me</a></li>
+          <li class="nav__menu--item text-light bold uppercase"><a href=#skills class="nav-link">Skills</a></li>
+          <li class="nav__menu--item text-light bold uppercase"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav__menu--item text-light bold uppercase"><a href="https://www.chrisrumler.com/blog.html" class="nav-link">Blog</a></li>
+          <li class="nav__menu--item text-light bold uppercase"><a href="#contact" class="nav-link">Contact</a></li>
+
+          <div class="nav__menu--socials-container">
+            <a href="https://twitter.com/The_SER_Codes" class="social-icon--nav social-icon--a" target="_blank"><ion-icon name="logo-twitter" class="social-icon--nav fs-600"></ion-icon></a>
+      
+            <a href="https://www.linkedin.com/in/chrisrumler/" class="social-icon--nav" target="_blank"><ion-icon name="logo-linkedin" class="social-icon--nav fs-600"></ion-icon></a>
+          </div>
+        </ul>
+        <div class="hamburger_menu_container">
+          <img src="../assets/logos/icon-hamburger.svg" alt="Hamburger Menu">
+        </div>
+        <div class="close_hamburger_container">
+          <img src="../assets/logos/icon-close.svg" alt="Close Hamburger Menu">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-post">
+      <div class="container">
+        <h1>CSS Flexbox 101</h1>
+        <h2>July 29th, 2022</h2>
+
+        <p>As a web developer of old, trying to get all of your elements aligned just the way you wanted  took a lot of time.  How did we do it, you ask?  I’ll tell you (but the answer may frighten you)….</p>
+
+        <p>“Table” tags.  ”Table” tags as far as the eye could see.</p>
+
+        <p>Sure, the “float” property in CSS alleviated a lot of that pain and struggle.  However, it did introduce its own set of problems that had to be addressed with a well placed “clear” property somewhere within your CSS file.</p>
+
+        <p>But that all changed with the introduction of CSS Flexbox.  It is easily one of CSS’s best features to have been created in the last decade, and has made the “float / clear” combination a thing of the past.</p>
+
+        <p>In this article, I’m going to teach you the basics to get started with Flexbox.  Even with only learning the basics, you will discover the potential power that Flexbox contains.</p>
+
+        <h3>What Exactly is Flexbox?</h3>
+        <p>CSS Flexbox is a way to structure the layout of elements within a web page.  It contains two major components: the container and that container’s flexbox items.  The container acts as the parent of any of the flexbox children items that reside within the container.  You can customize that container to display each of those flexbox items as you deem to be fit.  If there is one or more specific flexbox items within the container that you’d like to behave differently from the rest of the items, you can customize those as well.</p>
+
+        <h3>How to Use Flexbox</h3>
+        <p>The first step that you need to take if you want to use Flexbox is to give your container the <span class="blue-span">display: flex</span> property.  Right away, you will see that any flexbox items that are in your flex container are now sitting side by side from left to right across what is known as the “Main Axis”.  To go from up and down vertically, it would be going down the “Cross Axis”.</p>
+
+        <p>If you want to work on aligning the flex items along the Main Axis, you will want to work with the “justify-content” property.  By default, this property is set to “flex-start”.  An example of what this would look like is this:</p>
+
+        <img src="../assets/images/blog-images/07_29_2022/flex-start.webp" />
+
+        <p>But what if you wanted to have your items centered?  That’s where <span class=blue-span>justify-content: center</span> comes in!</p>
+
+        <img src="../assets/images/blog-images/07_29_2022/center.webp" />
+
+        <p>Looking to have your items spread out evenly?  <span class=blue-span>justify-content: space-between</span> is what you are looking for.</p>
+
+        <img src="../assets/images/blog-images/07_29_2022/space-between.webp" />
+
+        <p>If you want your items to be spread out, but not take up the entire width of your container, then you will want to use <span class=blue-span>justify-content: space-around</span>.</p>
+
+        <img src="../assets/images/blog-images/07_29_2022/space-around.webp" />
+
+        <p>However, if you want a little more breathing room on each side of your container, then use <span class=blue-span>justify-content: space-evenly</span></p>
+
+        <img src="../assets/images/blog-images/07_29_2022/space-evenly.webp" />
+
+        <h3>To Be Continued...</h3>
+        <p>This is only the beginning of the power that CSS Flexbox possesses!  In my next article, I will go over some more commonly used properties of Flexbox.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="blog-footer">
+    <p>Chris Rumler | Copyright @<span class="copyright-year text-center"></span></p>
+
+    <div class="flex footer--social">
+      <a href="https://twitter.com/The_SER_Codes" target="_blank"><ion-icon name="logo-twitter" class="social-icon fs-600"></ion-icon></a>
+
+      <a href="https://www.linkedin.com/in/chrisrumler/" target="_blank"><ion-icon name="logo-linkedin" class="social-icon fs-600"></ion-icon></a>
+    </div>
+
+    <img src="../assets/images/profile_avatar.svg" class="profile-avatar" alt="Profile avatar">
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

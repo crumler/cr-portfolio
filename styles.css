@@ -440,6 +440,51 @@ footer {
   margin-top: 1rem;
 }
 
+.blog-entry h3 {
+  font-weight: 400;
+}
+
+.blog-entry {
+  background-color: var(--dark-bg-color);
+  padding: 0.5rem;
+}
+
+.blog-entry p:last-child {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.blog-entry img {
+  margin: 1rem 0;
+}
+
+.blog-post {
+  line-height: 1.8rem;
+}
+
+.blog-post h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.blog-post h3 {
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.blog-post p {
+  margin-top: 2rem;
+}
+
+.blog-post span {
+  font-weight: 700;
+}
+
+.blog-post img {
+  margin: 1rem 0 2rem 0;
+}
+
 
 /* ==================== */
 /* MEDIA QUERIES        */
