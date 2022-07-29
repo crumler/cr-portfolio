@@ -449,6 +449,13 @@ footer {
   padding: 0.5rem;
 }
 
+.blog-entry a,
+.blog-entry a:visited,
+.blog-entry a:hover,
+.blog-entry a:active {
+    color: inherit;
+}
+
 .blog-entry p:last-child {
   margin-top: 1rem;
   font-weight: 700;
@@ -507,6 +514,12 @@ footer {
   .cta { margin-bottom: 1.5rem; }
 
   .profile-avatar { width: 25%; }
+
+  .blog-entry-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
   
 }
 
@@ -570,6 +583,10 @@ footer {
   }
 
   .profile-avatar { width: 10%; }
+
+  .blog-entry-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1100px) {
