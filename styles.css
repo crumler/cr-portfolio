@@ -325,6 +325,7 @@ header {
 
 /* ----- Past Project ----- */
 
+
 .projects { padding-bottom: 2rem; }
 
 .projects-container { flex-direction: column; }
@@ -340,7 +341,16 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1em;
+  /* padding: 1em; */
+}
+
+.project-description {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.project-description--paragraph {
+  margin-top: 1rem;
 }
 
 .project img {
@@ -562,6 +572,17 @@ footer {
 
   .how-item-container { gap: 3rem; }
 
+  .new-project-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .new-project-container:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .project-description { text-align: left; }
+
   .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -636,6 +657,10 @@ footer {
   .left-header.text-center { text-align: left; }
 
   .about .flex { flex-direction: row; }
+
+  .new-project-container {
+    margin-top: 2rem;
+  }
 
   .profile-description-container {
     margin: 0;
