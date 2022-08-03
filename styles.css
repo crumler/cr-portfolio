@@ -580,7 +580,6 @@ footer {
   .new-project-container:nth-child(odd) {
     flex-direction: row-reverse;
   }
-
   .project-description { text-align: left; }
 
   .projects-container {
@@ -588,6 +587,16 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
+
+  .project a {
+    display: flex;
+  }
+
+  /* To push project image to end of container */
+  .odd { justify-content: flex-end; }
+
+  /* To align project description to end of container */
+  .even { text-align: right; }
 
   .name-email-container {
     display: flex;
