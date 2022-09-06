@@ -359,6 +359,8 @@ header {
   display: inline;
   width: 70%;
   height: auto;
+  -webkit-box-shadow: 5px 5px 15px -6px #000000; 
+  box-shadow: 5px 5px 15px -6px #000000;
 }
 
 .project { margin-top: 2rem; }
