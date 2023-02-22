@@ -285,6 +285,11 @@ header {
 
 .skill-container:last-child { margin-bottom: 0; }
 
+.webflow-icon {
+  width: 38px;
+  height: auto;
+}
+
 /* ----- Grow Business section ----- */
 
 .how {
